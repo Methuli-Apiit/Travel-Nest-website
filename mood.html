@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TravelNest | Travel Mood</title>
+
+  <link rel="stylesheet" href="css/style.css">
+  <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+/>
+  <link rel="icon" href="icons/favicon.ico">
+  <link rel="manifest" href="manifest.json">
+</head>
+
+<body>
+
+  <header class="site-header">
+    <nav class="navbar">
+     <a href="index.html" class="logo">
+  <img src="images/logo.png" alt="TravelNest Logo">
+
+  <span>TravelNest</span>
+</a>
+
+      <button class="menu-toggle" id="menuToggle">☰</button>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="explorer.html">Destination Explorer</a></li>
+        <li><a href="budget.html">Budget Planner</a></li>
+        <li><a href="generator.html">Trip Generator</a></li>
+        <li><a href="mood.html">Travel Mood</a></li>
+        <li><a href="feedback.html">Feedback</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <section class="page-hero mood-banner reveal">
+      <h1>Travel Mood</h1>
+      <p>Relax with ambient travel sounds and track your travel goals.</p>
+    </section>
+
+    <section class="mood-section reveal">
+
+      <article class="mood-card">
+        <h2>Ambient Travel Sounds</h2>
+        <p>Choose a sound to create your travel atmosphere.</p>
+
+        <div class="sound-buttons">
+          <button class="btn sound-btn" data-sound="beach">Beach Waves</button>
+          <button class="btn sound-btn" data-sound="forest">Forest</button>
+          <button class="btn sound-btn" data-sound="city">City</button>
+          <button class="btn btn-secondary" id="stopSound">Stop Sound</button>
+        </div>
+
+        <p id="soundStatus">No sound is playing.</p>
+      </article>
+
+      <article class="mood-card">
+        <h2>Track Your Destination</h2>
+
+        <form id="tripStatusForm">
+          <label for="tripDestination">Destination</label>
+          <input type="text" id="tripDestination" placeholder="Enter destination name">
+
+          <label for="tripStatus">Status</label>
+          <select id="tripStatus">
+            <option value="Planned">Planned</option>
+            <option value="Visited">Visited</option>
+          </select>
+
+          <button type="submit" class="btn">Save Destination</button>
+        </form>
+      </article>
+
+    </section>
+
+    <section class="section reveal">
+      <h2>My Travel Tracker</h2>
+      <p class="section-intro">Your visited and planned destinations will be saved here.</p>
+
+      <section class="tracker-list" id="trackerList"></section>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <section>
+      <h2>TravelNest</h2>
+      <p>TravelNest helps users explore destinations, plan adventures and manage travel inspiration.</p>
+      <div class="social-icons">
+
+  <a href="#">
+    <i class="fab fa-facebook-f"></i>
+  </a>
+
+  <a href="#">
+    <i class="fab fa-instagram"></i>
+  </a>
+
+  <a href="#">
+    <i class="fab fa-twitter"></i>
+  </a>
+
+  <a href="#">
+    <i class="fab fa-linkedin-in"></i>
+  </a>
+
+</div>
+    </section>
+
+    <section>
+      <h3>Quick Links</h3>
+      <a href="index.html">Home</a>
+      <a href="explorer.html">Explorer</a>
+      <a href="budget.html">Budget Planner</a>
+       <a href="generator.html">Trip Generator</a>
+      <a href="mood.html">Travel Mood</a>
+    </section>
+
+    <section>
+      <h3>Newsletter</h3>
+      <form id="newsletterForm">
+        <input type="email" id="newsletterEmail" placeholder="Enter your email">
+        <button type="submit">Subscribe</button>
+      </form>
+      <p id="newsletterMessage"></p>
+    </section>
+    <div class="footer-bottom">
+
+  <p>
+    © 2026 TravelNest. All Rights Reserved.
+  </p>
+
+</div>
+  </footer>
+
+  <script src="js/mood.js"></script>
+  <script src="js/main.js"></script>
+
+</body>
+
+</html>

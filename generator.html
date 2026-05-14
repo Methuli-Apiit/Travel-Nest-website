@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TravelNest | Random Trip Generator</title>
+
+  <link rel="stylesheet" href="css/style.css">
+  <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+/>
+  <link rel="icon" href="icons/favicon.ico">
+  <link rel="manifest" href="manifest.json">
+</head>
+
+<body>
+
+  <header class="site-header">
+    <nav class="navbar">
+     <a href="index.html" class="logo">
+  <img src="images/logo.png" alt="TravelNest Logo">
+
+  <span>TravelNest</span>
+</a>
+      <button class="menu-toggle" id="menuToggle">☰</button>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="explorer.html">Destination Explorer</a></li>
+        <li><a href="budget.html">Budget Planner</a></li>
+        <li><a href="generator.html">Trip Generator</a></li>
+        <li><a href="mood.html">Travel Mood</a></li>
+        <li><a href="feedback.html">Feedback</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <section class="page-hero generator-banner reveal">
+      <h1>Random Trip Generator</h1>
+      <p>Choose your travel mood and budget to discover a destination idea.</p>
+    </section>
+
+    <section class="generator-section reveal">
+
+      <article class="generator-card">
+        <h2>Find a Trip Idea</h2>
+
+        <form id="generatorForm">
+
+          <label for="travelType">Travel Type</label>
+          <select id="travelType">
+            <option value="all">Any Type</option>
+            <option value="adventure">Adventure</option>
+            <option value="relaxation">Relaxation</option>
+            <option value="cultural">Cultural</option>
+            <option value="nature">Nature</option>
+          </select>
+
+          <label for="budgetRange">Budget Range</label>
+          <select id="budgetRange">
+            <option value="all">Any Budget</option>
+            <option value="low">Low</option>
+            <option value="medium">Medium</option>
+            <option value="high">High</option>
+          </select>
+
+          <button type="submit" class="btn">Surprise Me</button>
+        </form>
+      </article>
+
+      <article class="generator-result" id="generatorResult">
+        <h2>Your Suggested Trip</h2>
+        <p>Select your preferences and click Surprise Me.</p>
+      </article>
+
+    </section>
+
+    <section class="section reveal">
+      <h2>My Travel Wishlist</h2>
+      <p class="section-intro">Saved destinations will appear here.</p>
+
+      <section class="wishlist-list" id="wishlistList"></section>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <section>
+      <h2>TravelNest</h2>
+      <p>TravelNest helps users explore destinations, plan adventures and manage travel inspiration.</p>
+      <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+/>
+    </section>
+
+    <section>
+      <h3>Quick Links</h3>
+      <a href="index.html">Home</a>
+      <a href="explorer.html">Explorer</a>
+      <a href="budget.html">Budget Planner</a>
+      <a href="generator.html">Trip Generator</a>
+      <a href="mood.html">Travel Mood</a>
+    </section>
+
+    <section>
+      <h3>Newsletter</h3>
+      <form id="newsletterForm">
+        <input type="email" id="newsletterEmail" placeholder="Enter your email">
+        <button type="submit">Subscribe</button>
+      </form>
+      <p id="newsletterMessage"></p>
+    </section>
+    <div class="footer-bottom">
+
+  <p>
+    © 2026 TravelNest. All Rights Reserved.
+  </p>
+
+</div>
+<div class="social-icons">
+
+  <a href="#">
+    <i class="fab fa-facebook-f"></i>
+  </a>
+
+  <a href="#">
+    <i class="fab fa-instagram"></i>
+  </a>
+
+  <a href="#">
+    <i class="fab fa-twitter"></i>
+  </a>
+
+  <a href="#">
+    <i class="fab fa-linkedin-in"></i>
+  </a>
+
+</div>
+  </footer>
+
+  <script src="js/data.js"></script>
+  <script src="js/generator.js"></script>
+  <script src="js/main.js"></script>
+
+</body>
+
+</html>

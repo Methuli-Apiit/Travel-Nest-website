@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TravelNest | Feedback & Support</title>
+
+  <link rel="stylesheet" href="css/style.css">
+  <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+/>
+  <link rel="icon" href="icons/favicon.ico">
+  <link rel="manifest" href="manifest.json">
+</head>
+
+<body>
+
+  <header class="site-header">
+    <nav class="navbar">
+
+     <a href="index.html" class="logo">
+  <img src="images/logo.png" alt="TravelNest Logo">
+
+  <span>TravelNest</span>
+</a>
+      <button class="menu-toggle" id="menuToggle">☰</button>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="explorer.html">Destination Explorer</a></li>
+        <li><a href="budget.html">Budget Planner</a></li>
+        <li><a href="generator.html">Trip Generator</a></li>
+        <li><a href="mood.html">Travel Mood</a></li>
+        <li><a href="feedback.html">Feedback</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <section class="page-hero feedback-banner reveal">
+      <h1>Feedback & Support</h1>
+      <p>Share your thoughts and find answers to common questions.</p>
+    </section>
+
+    <section class="feedback-section reveal">
+
+      <article class="feedback-card">
+        <h2>Send Feedback</h2>
+
+        <form id="feedbackForm">
+          <label for="userName">Name</label>
+          <input type="text" id="userName" placeholder="Enter your name">
+
+          <label for="userEmail">Email</label>
+          <input type="email" id="userEmail" placeholder="Enter your email">
+
+          <label for="userMessage">Message</label>
+          <textarea id="userMessage" rows="6" placeholder="Enter your message"></textarea>
+
+          <button type="submit" class="btn">Submit Feedback</button>
+        </form>
+
+        <p id="feedbackMessage"></p>
+      </article>
+
+      <article class="feedback-card">
+        <h2>Frequently Asked Questions</h2>
+
+        <section class="faq-item">
+          <button class="faq-question">What is TravelNest?</button>
+          <p class="faq-answer">
+            TravelNest is a front-end travel planning website that helps users explore destinations,
+            plan budgets, save wishlists and track travel goals.
+          </p>
+        </section>
+
+        <section class="faq-item">
+          <button class="faq-question">Can I save my favourite destinations?</button>
+          <p class="faq-answer">
+            Yes. Destinations can be saved to a wishlist using localStorage in the browser.
+          </p>
+        </section>
+
+        <section class="faq-item">
+          <button class="faq-question">Does the budget planner store my trip?</button>
+          <p class="faq-answer">
+            Yes. The trip budget details are saved in localStorage after calculation.
+          </p>
+        </section>
+
+        <section class="faq-item">
+          <button class="faq-question">Is this website mobile responsive?</button>
+          <p class="faq-answer">
+            Yes. The layout uses responsive CSS, media queries, Flexbox and CSS Grid.
+          </p>
+        </section>
+
+      </article>
+
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <section>
+      <h2>TravelNest</h2>
+      <p>TravelNest helps users explore destinations, plan adventures and manage travel inspiration.</p>
+      <div class="social-icons">
+
+  <a href="#">
+    <i class="fab fa-facebook-f"></i>
+  </a>
+
+  <a href="#">
+    <i class="fab fa-instagram"></i>
+  </a>
+
+  <a href="#">
+    <i class="fab fa-twitter"></i>
+  </a>
+
+  <a href="#">
+    <i class="fab fa-linkedin-in"></i>
+  </a>
+
+</div>
+    </section>
+
+    <section>
+      <h3>Quick Links</h3>
+      <a href="index.html">Home</a>
+      <a href="explorer.html">Explorer</a>
+      <a href="budget.html">Budget Planner</a>
+       <a href="generator.html">Trip Generator</a>
+      <a href="mood.html">Travel Mood</a>
+    </section>
+
+    <section>
+      <h3>Newsletter</h3>
+      <form id="newsletterForm">
+        <input type="email" id="newsletterEmail" placeholder="Enter your email">
+        <button type="submit">Subscribe</button>
+      </form>
+      <p id="newsletterMessage"></p>
+    </section>
+    <div class="footer-bottom">
+
+  <p>
+    © 2026 TravelNest. All Rights Reserved.
+  </p>
+
+</div>
+  </footer>
+
+  <script src="js/feedback.js"></script>
+  <script src="js/main.js"></script>
+
+</body>
+
+</html>

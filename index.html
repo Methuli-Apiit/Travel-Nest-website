@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>TravelNest | Home</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/style.css">
+  <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+/>
+
+  <!-- Favicon -->
+  <link rel="icon" href="icons/favicon.ico">
+
+  <!-- PWA -->
+  <link rel="manifest" href="manifest.json">
+</head>
+
+<body>
+
+  <!-- Header -->
+  <header class="site-header">
+
+    <nav class="navbar">
+
+      <!-- Logo -->
+      <a href="index.html" class="logo">
+  <img src="images/logo.png" alt="TravelNest Logo" >
+  <span>TravelNest</span>
+</a>
+
+      <!-- Hamburger Button -->
+      <button class="menu-toggle" id="menuToggle">
+        ☰
+      </button>
+
+      <!-- Navigation Links -->
+      <ul class="nav-links" id="navLinks">
+
+        <li>
+          <a href="index.html">Home</a>
+        </li>
+
+        <li>
+          <a href="explorer.html">Destination Explorer</a>
+        </li>
+
+        <li>
+          <a href="budget.html">Budget Planner</a>
+        </li>
+
+        <li>
+          <a href="generator.html">Trip Generator</a>
+        </li>
+
+        <li>
+          <a href="mood.html">Travel Mood</a>
+        </li>
+
+        <li>
+          <a href="feedback.html">Feedback</a>
+        </li>
+
+      </ul>
+
+    </nav>
+
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <section class="hero reveal">
+  <article class="hero-text">
+    <p class="eyebrow">Explore • Plan • Remember</p>
+
+    <h1>Plan Your Next Adventure with TravelNest</h1>
+
+    <p id="quoteText">
+      Discover beautiful destinations and create your perfect travel plan.
+    </p>
+
+    <div class="hero-buttons">
+      <a href="explorer.html" class="btn">Explore Destinations</a>
+      <a href="generator.html" class="btn btn-secondary">Surprise Me</a>
+    </div>
+  </article>
+
+  <article class="hero-image">
+    <img src="images/hero-travel.jpg" alt="Beautiful beach travel destination">
+  </article>
+</section>
+
+<section class="section reveal">
+  <h2>Destination of the Day</h2>
+  <p class="section-intro">
+    A daily travel idea selected for your next inspiration.
+  </p>
+
+  <article class="feature-card" id="destinationOfDay">
+    <h3>Loading destination...</h3>
+    <p>Please wait...</p>
+  </article>
+</section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+
+    <!-- About -->
+    <section>
+
+      <h2>TravelNest</h2>
+
+      <p>
+        TravelNest helps users explore destinations,
+        plan adventures and manage travel inspiration
+        in one place.
+      </p>
+      <div class="social-icons">
+
+  <a href="#">
+    <i class="fab fa-facebook-f"></i>
+  </a>
+
+  <a href="#">
+    <i class="fab fa-instagram"></i>
+  </a>
+
+  <a href="#">
+    <i class="fab fa-twitter"></i>
+  </a>
+
+  <a href="#">
+    <i class="fab fa-linkedin-in"></i>
+  </a>
+
+</div>
+
+    </section>
+
+    <!-- Quick Links -->
+    <section>
+
+      <h3>Quick Links</h3>
+
+      <a href="index.html">Home</a>
+      <a href="explorer.html">Explorer</a>
+      <a href="budget.html">Budget Planner</a>
+      <a href="generator.html">Trip Generator</a>
+      <a href="mood.html">Travel Mood</a>
+
+    </section>
+
+    <!-- Newsletter -->
+    <section>
+
+      <h3>Newsletter</h3>
+
+      <form id="newsletterForm">
+
+        <input
+          type="email"
+          id="newsletterEmail"
+          placeholder="Enter your email"
+        >
+
+        <button type="submit">
+          Subscribe
+        </button>
+
+      </form>
+
+      <p id="newsletterMessage"></p>
+
+    </section>
+    <div class="footer-bottom">
+
+  <p>
+    © 2026 TravelNest. All Rights Reserved.
+  </p>
+
+</div>
+
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="js/main.js"></script>
+
+</body>
+
+</html>
